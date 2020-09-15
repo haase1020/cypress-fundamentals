@@ -11,3 +11,17 @@ then first time you run after installing cypress:
 
 use this website for tests:
 `http://todomvc-app-for-testing.surge.sh/`
+
+to run cypress non-interactively: (CI environment)
+`npx cypress run` (this runs tests in headless mode)
+
+`npx cypress run --help` (for help options)
+`npx cypress run --spec <spec>`
+
+for others that download code:
+`npm install`
+
+to run tests:
+
+`npm test` (headless mode/ non-interactive)
+`npm run cypress`(for interactive)

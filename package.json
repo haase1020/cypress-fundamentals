@@ -1,0 +1,24 @@
+{
+  "name": "cypress-fundamentals",
+  "version": "1.0.0",
+  "description": "tutorial on cypress",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "cypress": "cypress open",
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haase1020/cypress-fundamentals.git"
+  },
+  "author": "Mandi Haase",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haase1020/cypress-fundamentals/issues"
+  },
+  "homepage": "https://github.com/haase1020/cypress-fundamentals#readme"
+}
