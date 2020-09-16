@@ -5,7 +5,7 @@
 //max chars is 15
 describe('Text box with max chars', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/example-2');
+    cy.visit('/example-2');
 
     cy.get('[data-cy="last-name-chars-left-count]').as('charsLeftSpan');
   });
