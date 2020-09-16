@@ -1,4 +1,7 @@
 {
-  "watchForFileChanges": false,
-  "baseUrl": "http://localhost:3000"
+  "baseUrl": "http://localhost:3000",
+  "env": {
+    "MY_LOGIN": "user1",
+    "MY_PASSWORD": "password"
+  }
 }

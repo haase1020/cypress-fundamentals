@@ -1,5 +1,8 @@
 /// <reference types="cypress" />
 
+alert(Cypress.env('MY_LOGIN'));
+alert(Cypress.env('MY_PASSWORD'));
+
 import { navigate } from '../page-objects/todo-page';
 
 describe('Heading text', () => {
