@@ -25,3 +25,10 @@ to run tests:
 
 `npm test` (headless mode/ non-interactive)
 `npm run cypress`(for interactive)
+
+## applitools
+
+`npm install @applitools/eyes-cypress`
+`npx eyes-setup`
+to enter API Key: (get from applitools website)
+`set APPLITOOLS_API_KEY=<your-key>`

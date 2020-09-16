@@ -4,6 +4,7 @@
   "description": "tutorial on cypress",
   "main": "index.js",
   "dependencies": {
+    "@applitools/eyes-cypress": "^3.13.4",
     "cypress": "^5.2.0"
   },
   "devDependencies": {},
