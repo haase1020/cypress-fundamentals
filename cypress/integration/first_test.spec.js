@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
 
+//to use env variables
 alert(Cypress.env('MY_LOGIN'));
 alert(Cypress.env('MY_PASSWORD'));
 
@@ -14,3 +15,5 @@ describe('Heading text', () => {
     cy.get('h1').invoke('text').should('equal', 'todos');
   });
 });
+
+it();
