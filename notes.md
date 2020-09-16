@@ -4,3 +4,7 @@
 first time installation into a new project:
 `npm install --save-dev cypress`
 `npx cypress open`
+
+## adding attributes for testing
+
+`data-cy="max-char-input"`
