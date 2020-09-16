@@ -7,7 +7,7 @@ describe('Text box with max chars', () => {
   it('displays the appropriate remaining char count', () => {
     cy.visit('http://localhost:3000/example-2');
 
-    cy.get('[data-cy="last-name-chars-left-count]').as('charsLeftSpan');
+    cy.get('[data-cy="last-name-chars-left-count"]').as('charsLeftSpan');
 
     //eq is if you have more than one item
     cy.get('@charsLeftSpan').invoke('text').should('equal', '15');
