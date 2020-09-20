@@ -113,4 +113,41 @@ describe('Heading text', () => {
     cy.get('[type="checkbox"]').eq(0).click({ force: true }); //to uncheck
     cy.get('[type="checkbox"]').eq(0).check({ force: true }); //for checkbox, can't uncheck
   });
+
+  //dropdown
+  it.only('list and dropdowns', () => {
+    cy.visit('/');
+
+    //1
+    cy.get('nav nb-select').click();
+    cy.get('.options-list').contains('Dark').click();
+
+    //cypress only uses rgb format
+    cy.get('nb-layout-header nav').should(
+      'have.css',
+      'background-color',
+      'rgb(34, 43, 69)'
+    );
+
+    //2
+    cy.get('nav nb-select').then((dropdown) => {
+      cy.wrap(dropdown).click();
+      cy.get('.options-list nb-options').each((listItem) => {
+        const itemText = listItem.text().trim();
+
+        const colors = {
+          Light: 'rgb(255, 255, 255',
+          Dark: 'rgb(34,43,69)',
+          Cosmic: 'rgb(50,50,89)',
+        };
+        cy.wrap(listItem).click();
+        cy.wrap(dropdown).should('contain', itemText);
+        cy.get('nb-layout-header nav').should(
+          'have.css',
+          'background-color',
+          colors[itemText]
+        );
+      });
+    });
+  });
 });
