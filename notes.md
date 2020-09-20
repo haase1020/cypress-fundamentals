@@ -8,3 +8,7 @@ first time installation into a new project:
 ## adding attributes for testing
 
 `data-cy="max-char-input"`
+
+## Cypress Course Udemy
+
+1. Invoke properties - powerful!
